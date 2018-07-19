@@ -1,0 +1,238 @@
+Joe Armstrong nói Erlang là ngôn ngữ OOP duy nhất https://www.infoq.com/interviews/johnson-armstrong-oop.
+
+http://rylev.github.io/words/blog/2013/10/03/erlang-is-the-most-object-oriented-language/
+
+4 pillars, 5 principles mới đúng, 5 là cái SOLID, 4 là encapsulation, inheritance, abstraction, polymorphims
+
+với là OOP xét trên góc nhìn là cái gì
+
+toanha [10:34 AM]
+xai `import` ah
+
+HQC [10:34 AM]
+ở một mức độ nào đó `use` có thể xem là inheritance nhỉ?
+
+toanha [10:34 AM]
+`use` e nghi giong `abstract` hon
+
+HQC [10:34 AM]
+abstract là interface á hả?
+
+toanha [10:34 AM]
+oh
+
+HQC [10:35 AM]
+a nghĩ là behaviour giống hơn á
+interface nhớ là viết header thôi thì phải
+
+toanha [10:35 AM]
+`interface` thi bat buoc child phai override lai toan bo function cua parent (edited)
+abstract thi co hoac khong
+
+duythinphp [10:35 AM]
+`implements*`
+không phải là override
+
+toanha [10:36 AM]
+yep
+implements
+pv OOP la rot tu vong gui xe :crying:
+
+HQC [10:37 AM]
+ủa hàm abstract define trước body dc à :think:
+
+duythinphp [10:37 AM]
+hên quá, mình fanboy Java, code Go nhưng làm việc dùng javascript :kappa:
+
+HQC [10:37 AM]
+nhớ là viết `header` của hàm thôi mà
+
+toanha [10:37 AM]
+ben java hinh nhu dc
+
+duythinphp [10:37 AM]
+abstraction class khác với interface
+
+toanha [10:37 AM]
+class them `abstract` vo la dc
+
+duythinphp [10:37 AM]
+:kappa:
+
+toanha [10:38 AM]
+con interface moi k co dinh nghia dc than ham
+cai a HQC noi la C++
+
+duythinphp [10:38 AM]
+C++ méo có interface
+chỉ có virtual class
+
+HQC [10:38 AM]
+đó là mình nói `@behaviour` là ... interface á
+
+duythinphp [10:39 AM]
+và multi inheritance
+
+vietthang [10:39 AM]
+java 8 trở đi là viết được static function trong interfaces rồi
+
+toanha [10:39 AM]
+uh khac java
+C++ thi multi inheritance con java thi k cho
+
+duythinphp [10:39 AM]
+tôi có viết được C++ nên đừng lừa toy nha :troll:
+
+toanha [10:40 AM]
+^fanboy java, code GO lam viec dung js va expert C++ (edited)
+
+HQC [10:40 AM]
+túm lại mình nghĩ Elixir có đủ hình hài của OOP
+cơ mà tác giả ko có xác nhận nha
+
+toanha [10:40 AM]
+nếu vậy thì phải hỏi lại là những điểm nào để đánh giá 1 ngôn ngữ là OOP
+
+duythinphp [10:40 AM]
+OOP là gì :oh:
+
+vietthang [10:40 AM]
+đúng rồi
+
+toanha [10:40 AM]
+rồi check từng cái thoy
+
+vietthang [10:41 AM]
+shared duythinphp’s image: what_is_this_number.png 
+
+
+triet [10:41 AM]
+Thật ra câu này mình rất ghét, cơ mà bị hỏi hoài :think:
+
+toanha [10:41 AM]
+là lập trình hướng đối tượng :kappa: hồi nhỏ đc dạy thế
+
+triet [10:42 AM]
+Point ở đây là phải chỉ ra được OOP là gì, elixir có những cái nào có thể/không thể đáp ứng
+vì sao, cách hiện thực
+chứ không cần phải kết luận nó là OOP hay là không
+
+toanha [10:43 AM]
+:face_with_rolling_eyes:
+
+duythinphp [10:44 AM]
+mà tại sao
+phải đè nhau ra
+bàn luận nó là OOP hay không
+
+triet [10:44 AM]
+_vì đang mock interview_
+
+duythinphp [10:44 AM]
+vl
+:okay:
+
+toanha [10:45 AM]
+https://vietnamrb.slack.com/archives/C0JD6N86S/p1531903293000038
+> That's why
+triet
+Thật ra câu này mình rất ghét, cơ mà bị hỏi hoài :think:
+Posted in #elixirYesterday at 10:41 AM
+
+HQC [10:47 AM]
+trả lời Elixir is a practical programming language :troll:
+
+duythinphp [10:48 AM]
+thực ra thì mình không biết elixir
+
+HQC [10:48 AM]
+when you use it as an OOP language, so it is
+
+duythinphp [10:48 AM]
+nhưng mà theo cái view
+thì Actor nó hoàn toàn giống như một Object
+có đầy đủ tính chất của một object
+
+HQC [10:48 AM]
+> Empty your mind, be formless, shapeless — like water. Now you put water in a cup, it becomes the cup; You put water into a bottle it becomes the bottle; You put it in a teapot it becomes the teapot. Now water can flow or it can crash. Be water, my friend.
+
+duythinphp [10:49 AM]
+có method (send, received)
+chắc cũng có attributes
+
+vietthang [10:49 AM]
+có state
+
+duythinphp [10:49 AM]
+và hẳn là encapsulation
+mọi actor do user định nghĩa đều dựa trên một abstraction gọi là Actor
+-> inherit, poly
+hẳn là OOP :pikatroll:
+
+toanha [10:52 AM]
+@triet hài lòng với câu trả lời chưa, thắc mắc j nữa k cưng
+
+triet [10:55 AM]
+tl;dr đi, thành câu trả lời cụ thể chứ
+:think:
+
+toanha [10:57 AM]
+Elixir có thế sử dụng như là 1 OOP language vì có thế đáp ứng các tính chất, và cài đặt được như các ngôn ngữ OOP khác
+
+HQC [10:59 AM]
+:+1: cho @triet, bữa giờ Triết toàn đặt câu hỏi hay
+
+toanha [11:00 AM]
+:thumbsup:
+
+vietthang [11:01 AM]
+:thumbsup:
+
+mquy [11:01 AM]
+:+1:
+
+vietthang [11:01 AM]
+1 :thumbsup: cho anh thính php. @duythinphp
+
+triet [11:02 AM]
+:thumbsup:
+
+mquy [11:10 AM]
+nói chứ nãy giờ ko biết đang thảo luận gì :yaomin:
+
+u [11:10 AM]
+OOP vớ vẩn mà :omg:
+định nghĩa còn không rõ ràng
+mà chẳng đem lại giá trị gì
+
+mquy [11:19 AM]
+#elixir có gì feature nào là nổi bật nhất :think:
+
+lATAl [11:20 AM]
+`|>` ? (edited)
+nhìn đẹp
+
+triet [11:20 AM]
+Mấy cái thuộc về định nghĩa đúng là không rõ ràng, có thể không mang lại giá trị, nhưng lúc phỏng vấn có thể check được xem mức độ hiểu sâu của ứng viên đối với một ngôn ngữ
+với OOP có giá trị hay thì không cũng nên biết _sơ sơ_ OOP là gì :think:
+
+u [11:21 AM]
+OOP là gì @triet
+
+mquy [11:21 AM]
+`|>` nhìn đẹp thôi chấm hết :yaomin: (edited)
+
+triet [11:22 AM]
+Chương trình mock interview đến đây là kết thúc, hẹn gặp lại các bạn trong chương trình lần sau, nhớ đừng bỏ lỡ vào lúc 12h trưa mỗi ngày
+:kappa:
+_em không biết_
+_[tiếng vọng từ cánh gà...]_
+
+HQC [11:34 AM]
+@mquy chuyên gia gây bão
+
+anhduy [11:36 AM]
+Oop chắc giống fp, ko có định nghĩa roz ràng
+
+mquy [11:49 AM]
+:popcorn:
