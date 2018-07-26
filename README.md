@@ -4,4 +4,4 @@ To improve your knowledge and give you an opportunity to test yourself. Mock int
 
 # Why this repo
 
-It is daily summaries questions and answers from #elixir channel in [@rubyvn](http://ruby.org.vn/).
+It is daily summaries questions and answers from #elixir channel in [@daedstack](http://chat.daedstack.io/).
